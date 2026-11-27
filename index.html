@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ========== OGP / SNS シェア用メタタグ（公開前に差し替え） ==========
+       og:image 推奨: Created/01/main.png または専用 1200×630
+  ================================================================== -->
+  <title>ゼロニクルスタジオ | LINEスタンプ公式サイト</title>
+  <meta name="description" content="言えない本音を、スタンプで一発。ゼロニクルスタジオのLINEスタンプ公式サイト。侍ガエル・燃え尽き・ぶち切れおじさんの感情スタンプをトーク画面で試せます。" />
+  <meta name="keywords" content="LINEスタンプ,ゼロニクル,ゼロニクルスタジオ,侍ガエル,怒りスタンプ,感情スタンプ" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/" /><!-- ← 公開URLに差し替え -->
+  <meta property="og:title" content="ゼロニクルスタジオ | LINEスタンプ公式サイト" />
+  <meta property="og:description" content="言えない本音を、スタンプで一発。疑似トークで試してからLINE STOREで購入。" />
+  <meta property="og:image" content="https://example.com/Created/01/main.png" /><!-- ← 公開URLに差し替え -->
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="ゼロニクルスタジオ" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ゼロニクルスタジオ | LINEスタンプ公式サイト" />
+  <meta name="twitter:description" content="言えない本音を、スタンプで一発。疑似トークで試してからLINE STOREで購入。" />
+  <meta name="twitter:image" content="https://example.com/Created/01/main.png" /><!-- ← 公開URLに差し替え -->
+
+  <link rel="icon" href="Created/01/tab-16-muki.png" type="image/png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Nunito:wght@400;600;700;800&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: {
+              50: '#FFFDF8',
+              100: '#FFF8EE',
+              200: '#F5E6D0',
+            },
+            flame: {
+              DEFAULT: '#FF6A2B',
+              hot: '#FF3D00',
+              soft: '#FFE0D0',
+            },
+            frog: {
+              DEFAULT: '#3F9B4A',
+              deep: '#2E7A38',
+            },
+            ink: {
+              DEFAULT: '#1A1A1A',
+              muted: '#5C5C5C',
+            },
+            line: {
+              DEFAULT: '#06C755',
+              dark: '#05A847',
+              soft: '#E8F9EE',
+            },
+          },
+          fontFamily: {
+            display: ['"Dela Gothic One"', 'cursive'],
+            sans: ['"Zen Maru Gothic"', '"Nunito"', 'sans-serif'],
+            en: ['"Nunito"', '"Zen Maru Gothic"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="font-sans text-ink bg-paper-50 antialiased">
+
+  <header class="site-header fixed top-0 inset-x-0 z-50">
+    <div class="mx-auto max-w-5xl flex items-center justify-between px-4 py-3 md:px-6">
+      <a href="#top" class="brand-mark flex items-center gap-2 no-underline">
+        <img src="Created/01/tab-16-muki.png" alt="" class="brand-logo" width="28" height="28" />
+        <span class="font-display text-sm md:text-base tracking-wide text-ink" data-i18n="brand">ゼロニクルスタジオ</span>
+      </a>
+
+      <nav class="hidden sm:flex items-center gap-5 text-sm text-ink-muted">
+        <a href="#stickers" class="hover:text-flame transition-colors" data-i18n="nav.stickers">スタンプ</a>
+        <a href="#creator" class="hover:text-flame transition-colors" data-i18n="nav.creator">クリエイター</a>
+        <a href="#contact" class="hover:text-flame transition-colors" data-i18n="nav.contact">お仕事依頼</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-btn is-active" data-lang="ja" aria-pressed="true">JP</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a href="#stickers" class="cta-mini hidden md:inline-flex" data-i18n="nav.cta">ストアへ</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ========== ファーストビュー：代表キャッチ（侍ガエル main） ========== -->
+    <section class="hero relative overflow-hidden" aria-label="Hero">
+      <div class="hero-atmosphere" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob--a" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob--b" aria-hidden="true"></div>
+
+      <div class="relative mx-auto max-w-5xl px-4 pt-24 pb-10 md:px-6 md:pt-28 md:pb-16">
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="hero-brand font-display text-flame" data-i18n="hero.brand">ゼロニクルスタジオ</p>
+            <h1 class="hero-title font-display" data-i18n="hero.title">言えない本音を、スタンプで一発。</h1>
+            <p class="hero-lead text-ink-muted" data-i18n="hero.lead">怒りも涙も、ムキーッも。ゼロニクルの感情スタンプをトーク画面で試してから、LINE STOREで手に入れよう。</p>
+            <div class="hero-actions">
+              <!-- メイン商品の LINE STORE URL を差し替え -->
+              <a
+                href="https://store.line.me/stickershop/product/0000000/ja"
+                class="cta-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="hero.cta"
+              >LINE STOREで見る</a>
+              <a href="#stickers" class="cta-secondary" data-i18n="hero.secondary">スタンプを試す</a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <!-- 代表キャッチスタンプ: Created/01/main.png -->
+            <img
+              src="Created/01/main.png"
+              alt="侍ガエル — ムキーッ！"
+              class="hero-character-img float-soft"
+              width="640"
+              height="640"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== スタンプ一覧 + 疑似トーク ========== -->
+    <section id="stickers" class="section-stickers py-14 md:py-20">
+      <div class="mx-auto max-w-5xl px-4 md:px-6">
+        <header class="section-head mb-8 md:mb-10">
+          <h2 class="section-title font-display" data-i18n="stickers.title">スタンプを試してみよう</h2>
+          <p class="section-desc text-ink-muted" data-i18n="stickers.desc">スタンプをタップすると、トーク画面に送られます。使い心地をチェックしてから購入できます。</p>
+        </header>
+
+        <div class="stickers-workspace">
+          <div class="sticker-panel">
+            <div class="set-tabs" role="tablist" aria-label="Sticker sets">
+              <button type="button" class="set-tab is-active" data-set="samurai" role="tab" aria-selected="true">
+                <img src="Created/01/tab-16-muki.png" alt="" class="set-tab-icon" width="28" height="28" />
+                <span data-i18n="stickers.set.samurai">侍ガエル</span>
+              </button>
+              <button type="button" class="set-tab" data-set="burnout" role="tab" aria-selected="false">
+                <img src="Created/02/tab-st.png" alt="" class="set-tab-icon" width="28" height="28" />
+                <span data-i18n="stickers.set.burnout">燃え尽き</span>
+              </button>
+              <button type="button" class="set-tab" data-set="oyaji" role="tab" aria-selected="false">
+                <img src="Created/03/tab.png" alt="" class="set-tab-icon" width="28" height="28" />
+                <span data-i18n="stickers.set.oyaji">ぶち切れおじさん</span>
+              </button>
+            </div>
+
+            <div class="set-banner">
+              <img id="set-banner-img" src="Created/01/main.png" alt="" width="120" height="120" />
+              <div>
+                <p id="set-banner-title" class="set-banner-title font-display" data-i18n="stickers.set.samurai">侍ガエル</p>
+                <p id="set-banner-desc" class="set-banner-desc" data-i18n="stickers.set.samurai.desc">江戸の街に吠える、怒りカエル侍。</p>
+              </div>
+            </div>
+
+            <div id="sticker-grid" class="sticker-grid" role="list"></div>
+
+            <div class="set-buy-row">
+              <a
+                id="set-buy-link"
+                href="https://store.line.me/stickershop/product/0000001/ja"
+                class="cta-primary cta-primary--block"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="stickers.buy"
+              >購入する（LINE STOREへ）</a>
+            </div>
+          </div>
+
+          <aside class="chat-panel" aria-label="LINE風プレビュー">
+            <div class="chat-window">
+              <div class="chat-header">
+                <img src="Created/01/tab-16-muki.png" alt="" class="chat-avatar-img" width="36" height="36" />
+                <div>
+                  <p class="chat-name" data-i18n="chat.name">友だち</p>
+                  <p class="chat-status" data-i18n="chat.status">プレビュー中</p>
+                </div>
+              </div>
+              <div id="chat-messages" class="chat-messages" aria-live="polite"></div>
+              <div class="chat-toolbar">
+                <button type="button" id="chat-clear" class="chat-clear-btn" data-i18n="chat.clear">クリア</button>
+                <p class="chat-hint" data-i18n="chat.hint">左のスタンプをタップして送信</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== クリエイター ========== -->
+    <section id="creator" class="section-creator py-14 md:py-20">
+      <div class="mx-auto max-w-5xl px-4 md:px-6">
+        <header class="section-head mb-8 md:mb-12">
+          <h2 class="section-title font-display" data-i18n="creator.title">クリエイターについて</h2>
+          <p class="section-desc text-ink-muted" data-i18n="creator.desc">ゼロニクルスタジオのこと、キャラクターのこと。</p>
+        </header>
+
+        <div class="creator-layout">
+          <div class="creator-portrait">
+            <!-- プロフィール写真がない場合は代表キャラを仮置き。差し替え: assets/creator.jpg -->
+            <div class="portrait-frame">
+              <img src="Created/01/main.png" alt="ゼロニクル" class="portrait-img" width="200" height="200" />
+            </div>
+            <p class="creator-name font-display" data-i18n="creator.name">ゼロニクル</p>
+            <p class="creator-role text-ink-muted" data-i18n="creator.role">イラストレーター・スタンプクリエイター</p>
+          </div>
+
+          <div class="creator-story">
+            <h3 class="story-heading font-display" data-i18n="creator.storyTitle">想い</h3>
+            <p class="story-text" data-i18n="creator.story">チャットでうまく言えない怒り、疲れ、涙。そんな本音を、ひと押しで届けたい。ゼロニクルスタジオは、感情を誇張して笑いに変えるスタンプをつくっています。</p>
+
+            <h3 class="story-heading font-display mt-8" data-i18n="creator.bgTitle">制作背景</h3>
+            <p class="story-text" data-i18n="creator.bg">日常の「ムキーッ」から生まれた侍ガエルを皮切りに、燃え尽きサラリーマン、ぶち切れおじさんへとキャラクターを広げてきました。見て笑えて、送って気持ちが晴れる。そんなスタンプを目指しています。</p>
+          </div>
+        </div>
+
+        <div class="chardex mt-12 md:mt-16">
+          <h3 class="section-title font-display text-center mb-6" data-i18n="chardex.title">キャラクター図鑑</h3>
+          <div class="chardex-grid">
+            <article class="chardex-item">
+              <img src="Created/01/main.png" alt="" class="chardex-art" width="120" height="120" />
+              <h4 class="font-display" data-i18n="chardex.c1.name">侍ガエル</h4>
+              <p class="text-sm text-ink-muted" data-i18n="chardex.c1.desc">江戸の街で吠える怒りカエル侍。鉢巻を締め、ムキーッと蒸気を噴く。</p>
+            </article>
+            <article class="chardex-item">
+              <img src="Created/02/main-st.png" alt="" class="chardex-art" width="120" height="120" />
+              <h4 class="font-display" data-i18n="chardex.c2.name">燃え尽きくん</h4>
+              <p class="text-sm text-ink-muted" data-i18n="chardex.c2.desc">デスクに張り付く現代の疲弊戦士。無言の怒りと作り笑いが得意技。</p>
+            </article>
+            <article class="chardex-item">
+              <img src="Created/03/main.png" alt="" class="chardex-art" width="120" height="120" />
+              <h4 class="font-display" data-i18n="chardex.c3.name">ぶち切れおじさん</h4>
+              <p class="text-sm text-ink-muted" data-i18n="chardex.c3.desc">耳から湯気、目から滝。怒りのボルテージも涙の量も一級品。</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="sns-block mt-12 md:mt-16">
+          <h3 class="section-title font-display text-center mb-2" data-i18n="sns.title">フォローしてね</h3>
+          <p class="text-center text-ink-muted mb-6" data-i18n="sns.desc">新作スタンプや制作裏話を発信中</p>
+          <div class="sns-links">
+            <!-- SNS URL を差し替え -->
+            <a href="https://x.com/" class="sns-link sns-link--x" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <span class="sns-icon" aria-hidden="true">𝕏</span>
+              <span data-i18n="sns.x">X でフォロー</span>
+            </a>
+            <a href="https://instagram.com/" class="sns-link sns-link--ig" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <span class="sns-icon" aria-hidden="true">◎</span>
+              <span data-i18n="sns.ig">Instagram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== お仕事依頼 ========== -->
+    <section id="contact" class="section-contact py-14 md:py-20">
+      <div class="mx-auto max-w-xl px-4 md:px-6">
+        <header class="section-head mb-8 text-center">
+          <h2 class="section-title font-display" data-i18n="contact.title">お仕事のご依頼</h2>
+          <p class="section-desc text-ink-muted" data-i18n="contact.desc">企業コラボ・オーダーメイドスタンプ制作など、お気軽にご相談ください。</p>
+        </header>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <label class="form-field">
+            <span data-i18n="contact.name">お名前</span>
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label class="form-field">
+            <span data-i18n="contact.email">メールアドレス</span>
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label class="form-field">
+            <span data-i18n="contact.message">メッセージ</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="cta-primary cta-primary--block" data-i18n="contact.submit">送信する</button>
+          <p class="contact-alt text-center text-sm text-ink-muted mt-4">
+            <span data-i18n="contact.or">または</span>
+            <!-- メールアドレスを差し替え -->
+            <a href="mailto:hello@zeronicle.example" class="text-flame underline underline-offset-2">hello@zeronicle.example</a>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== シェア ========== -->
+    <section id="share" class="section-share py-12 md:py-16">
+      <div class="mx-auto max-w-xl px-4 md:px-6 text-center">
+        <h2 class="section-title font-display mb-2" data-i18n="share.title">友だちにも教えよう</h2>
+        <p class="text-ink-muted mb-6" data-i18n="share.desc">このページをシェアして、ムキーッを広げてください。</p>
+        <div class="share-actions">
+          <button type="button" id="share-x" class="share-btn share-btn--x" data-i18n="share.x">Xでシェアする</button>
+          <button type="button" id="share-copy" class="share-btn share-btn--copy" data-i18n="share.copy">リンクをコピー</button>
+        </div>
+        <p id="copy-toast" class="copy-toast" role="status" aria-live="polite" hidden data-i18n="share.copied">コピーしました</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-8">
+    <div class="mx-auto max-w-5xl px-4 md:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-ink-muted">
+      <p data-i18n="footer.copy">&copy; 2026 zeronicle</p>
+      <p data-i18n="footer.note">本サイトはLINEスタンプのプロモーション用ポートフォリオです。</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
