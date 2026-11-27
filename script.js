@@ -146,7 +146,7 @@
       "creator.title": "クリエイターについて",
       "creator.desc": "ゼロニクルスタジオのこと、キャラクターのこと。",
       "creator.name": "ゼロニクル",
-      "creator.role": "イラストレーター・スタンプクリエイター",
+      "creator.role": "スタンプクリエイター",
       "creator.storyTitle": "想い",
       "creator.story":
         "チャットでうまく言えない怒り、疲れ、涙。そんな本音を、ひと押しで届けたい。<br>ゼロニクルスタジオは、感情を誇張して笑いに変えるスタンプをつくっています。",
@@ -218,7 +218,7 @@
       "creator.title": "About the creator",
       "creator.desc": "Zeronicle Studio and the characters behind the stickers.",
       "creator.name": "zeronicle",
-      "creator.role": "Illustrator & sticker creator",
+      "creator.role": "sticker creator",
       "creator.storyTitle": "Why I create",
       "creator.story":
         "Anger, exhaustion, tears — feelings that are hard to type. Zeronicle Studio turns those oversized emotions into stickers you can laugh with and send in one tap.",
