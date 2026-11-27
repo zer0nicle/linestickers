@@ -19,8 +19,8 @@
       titleKey: "stickers.set.samurai",
       descKey: "stickers.set.samurai.desc",
       storeUrl: {
-        ja: "https://store.line.me/stickershop/product/0000001/ja",
-        en: "https://store.line.me/stickershop/product/0000001/en",
+        ja: "https://store.line.me/stickershop/product/35046416/ja",
+        en: "https://store.line.me/stickershop/product/35046416/en",
       },
       stickers: [
         { id: "s01", img: "Created/01/01-nandato.png", label: { ja: "なんだと！", en: "What?!" } },
@@ -47,8 +47,8 @@
       titleKey: "stickers.set.burnout",
       descKey: "stickers.set.burnout.desc",
       storeUrl: {
-        ja: "https://store.line.me/stickershop/product/0000002/ja",
-        en: "https://store.line.me/stickershop/product/0000002/en",
+        ja: "https://store.line.me/stickershop/product/36205039/ja",
+        en: "https://store.line.me/stickershop/product/36205039/en",
       },
       stickers: [
         { id: "b01", img: "Created/02/01_silent_rage.png", label: { ja: "無言の怒り", en: "Silent rage" } },
@@ -67,8 +67,8 @@
       titleKey: "stickers.set.oyaji",
       descKey: "stickers.set.oyaji.desc",
       storeUrl: {
-        ja: "https://store.line.me/stickershop/product/0000003/ja",
-        en: "https://store.line.me/stickershop/product/0000003/en",
+        ja: "https://store.line.me/stickershop/product/38178510/ja",
+        en: "https://store.line.me/stickershop/product/38178510/en",
       },
       stickers: [
         { id: "o01", img: "Created/03/01_silent_rage.png", label: { ja: "無言の怒り", en: "Silent rage" } },
@@ -124,7 +124,7 @@
       "hero.brand": "ゼロニクルスタジオ",
       "hero.title": "言えない本音を、スタンプで一発。",
       "hero.lead":
-        "怒りも涙も、ムキーッも。ゼロニクルの感情スタンプをトーク画面で試してから、LINE STOREで手に入れよう。",
+        "怒りも涙も、ムキーッも。<br>ゼロニクルの感情スタンプをトーク画面で試してから、LINE STOREで手に入れよう。",
       "hero.cta": "LINE STOREで見る",
       "hero.secondary": "スタンプを試す",
       "stickers.title": "スタンプを試してみよう",
@@ -149,10 +149,10 @@
       "creator.role": "イラストレーター・スタンプクリエイター",
       "creator.storyTitle": "想い",
       "creator.story":
-        "チャットでうまく言えない怒り、疲れ、涙。そんな本音を、ひと押しで届けたい。ゼロニクルスタジオは、感情を誇張して笑いに変えるスタンプをつくっています。",
+        "チャットでうまく言えない怒り、疲れ、涙。そんな本音を、ひと押しで届けたい。<br>ゼロニクルスタジオは、感情を誇張して笑いに変えるスタンプをつくっています。",
       "creator.bgTitle": "制作背景",
       "creator.bg":
-        "日常の「ムキーッ」から生まれた侍ガエルを皮切りに、燃え尽きサラリーマン、ぶち切れおじさんへとキャラクターを広げてきました。見て笑えて、送って気持ちが晴れる。そんなスタンプを目指しています。",
+        "日常の「ムキーッ」から生まれた侍ガエルを皮切りに、燃え尽きサラリーマン、ぶち切れおじさんへとキャラクターを広げてきました。<br>見て笑えて、送って気持ちが晴れる。そんなスタンプを目指しています。",
       "chardex.title": "キャラクター図鑑",
       "chardex.c1.name": "侍ガエル",
       "chardex.c1.desc":
@@ -167,9 +167,9 @@
       "sns.desc": "新作スタンプや制作裏話を発信中",
       "sns.x": "X でフォロー",
       "sns.ig": "Instagram",
-      "contact.title": "お仕事のご依頼",
+      "contact.title": "お仕事のご依頼や感想など",
       "contact.desc":
-        "企業コラボ・オーダーメイドスタンプ制作など、お気軽にご相談ください。",
+        "企業コラボ・オーダーメイドスタンプ制作など、お気軽にご相談ください。<br>また、スタンプの使い心地や感想などもお気軽にご連絡ください。",
       "contact.name": "お名前",
       "contact.email": "メールアドレス",
       "contact.message": "メッセージ",
@@ -239,9 +239,9 @@
       "sns.desc": "New packs, process notes, and behind-the-scenes",
       "sns.x": "Follow on X",
       "sns.ig": "Instagram",
-      "contact.title": "Work inquiries",
+      "contact.title": "Work inquiries & feedback",
       "contact.desc":
-        "Brand collabs, custom sticker packs, and more — feel free to reach out.",
+        "Brand collabs, custom sticker packs, and more — feel free to reach out.<br>Feedback on the stickers is welcome too.",
       "contact.name": "Name",
       "contact.email": "Email",
       "contact.message": "Message",
@@ -290,7 +290,10 @@
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
       const value = t(key);
-      if (value != null) el.textContent = value;
+      if (value == null) return;
+      // <br> を含む文言は HTML として反映（改行を保持）
+      if (value.includes("<br>")) el.innerHTML = value;
+      else el.textContent = value;
     });
 
     langButtons.forEach((btn) => {
@@ -495,7 +498,7 @@
       return;
     }
 
-    const to = "hello@zeronicle.example";
+    const to = "zer0nicle.inc@gmail.com";
     const subject = t("contact.mailSubject");
     const body = [
       `${t("contact.name")}: ${name}`,
